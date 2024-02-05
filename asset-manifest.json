@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/studywithme/static/css/main.ec8dc730.css",
-    "main.js": "/studywithme/static/js/main.8f53b790.js",
+    "main.js": "/studywithme/static/js/main.acc749b9.js",
     "static/js/787.b1b10883.chunk.js": "/studywithme/static/js/787.b1b10883.chunk.js",
     "static/media/readingpage.png": "/studywithme/static/media/readingpage.47c125551c85e7375662.png",
     "static/media/frogtable.png": "/studywithme/static/media/frogtable.d56f707329eb300b9299.png",
@@ -40,11 +40,11 @@
     "static/media/small-minus.svg": "/studywithme/static/media/small-minus.955311b88478098cd4ec76f9db65312b.svg",
     "static/media/big-minus.svg": "/studywithme/static/media/big-minus.8765836e191b849c0ee6e23e65d3484f.svg",
     "main.ec8dc730.css.map": "/studywithme/static/css/main.ec8dc730.css.map",
-    "main.8f53b790.js.map": "/studywithme/static/js/main.8f53b790.js.map",
+    "main.acc749b9.js.map": "/studywithme/static/js/main.acc749b9.js.map",
     "787.b1b10883.chunk.js.map": "/studywithme/static/js/787.b1b10883.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec8dc730.css",
-    "static/js/main.8f53b790.js"
+    "static/js/main.acc749b9.js"
   ]
 }

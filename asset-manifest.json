@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/studywithme/static/css/main.ec8dc730.css",
-    "main.js": "/studywithme/static/js/main.acc749b9.js",
-    "static/js/787.b1b10883.chunk.js": "/studywithme/static/js/787.b1b10883.chunk.js",
+    "main.css": "/studywithme/static/css/main.a6628539.css",
+    "main.js": "/studywithme/static/js/main.b82d96fc.js",
+    "static/js/453.94d84b8e.chunk.js": "/studywithme/static/js/453.94d84b8e.chunk.js",
     "static/media/readingpage.png": "/studywithme/static/media/readingpage.47c125551c85e7375662.png",
     "static/media/frogtable.png": "/studywithme/static/media/frogtable.d56f707329eb300b9299.png",
     "static/media/ducktable.png": "/studywithme/static/media/ducktable.a4597dbe47372e8c3d1a.png",
@@ -39,12 +39,12 @@
     "static/media/big-plus.svg": "/studywithme/static/media/big-plus.fbad98a2ad53b6b86d2297b07a00e48f.svg",
     "static/media/small-minus.svg": "/studywithme/static/media/small-minus.955311b88478098cd4ec76f9db65312b.svg",
     "static/media/big-minus.svg": "/studywithme/static/media/big-minus.8765836e191b849c0ee6e23e65d3484f.svg",
-    "main.ec8dc730.css.map": "/studywithme/static/css/main.ec8dc730.css.map",
-    "main.acc749b9.js.map": "/studywithme/static/js/main.acc749b9.js.map",
-    "787.b1b10883.chunk.js.map": "/studywithme/static/js/787.b1b10883.chunk.js.map"
+    "main.a6628539.css.map": "/studywithme/static/css/main.a6628539.css.map",
+    "main.b82d96fc.js.map": "/studywithme/static/js/main.b82d96fc.js.map",
+    "453.94d84b8e.chunk.js.map": "/studywithme/static/js/453.94d84b8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec8dc730.css",
-    "static/js/main.acc749b9.js"
+    "static/css/main.a6628539.css",
+    "static/js/main.b82d96fc.js"
   ]
 }

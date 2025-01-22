@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Music from './music';
+// import { Music } from './somewhere';
 import reportWebVitals from './reportWebVitals';
 
 

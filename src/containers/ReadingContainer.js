@@ -114,20 +114,45 @@ const ReadingContainer = ({ currentAvatarIndex, initialTimerValue}) => { // take
 	 }
    };
  
-   const handlePlusClick = () => {
-	 setTotalMinutes((prevValue) => {
-	   const newTotal = prevValue + 5;
-	   clearTimer(getDeadTime(newTotal)); // Update the deadline
-	   return newTotal;
-	 });
+   const getTimeInSeconds = (timeString) => {
+     const [hours, minutes, seconds] = timeString.split(':').map(Number);
+     return hours * 3600 + minutes * 60 + seconds;
    };
- 
+
+   const formatTimeFromSeconds = (totalSeconds) => {
+     const hours = Math.floor(totalSeconds / 3600);
+     const minutes = Math.floor((totalSeconds % 3600) / 60);
+     const seconds = totalSeconds % 60;
+     
+     return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+   };
+
+   const handlePlusClick = () => {
+     // Get current time in seconds
+     const currentTimeInSeconds = getTimeInSeconds(timer);
+     // Add 5 minutes (300 seconds)
+     const newTimeInSeconds = currentTimeInSeconds + 300;
+     // Update the timer display
+     setTimer(formatTimeFromSeconds(newTimeInSeconds));
+     
+     // Update deadline for the timer
+     const newDeadline = new Date();
+     newDeadline.setSeconds(newDeadline.getSeconds() + newTimeInSeconds);
+     clearTimer(newDeadline);
+   };
+
    const handleMinusClick = () => {
-	 setTotalMinutes((prevTotal) => {
-	   const newTotal = Math.max(0, prevTotal - 5);
-	   clearTimer(getDeadTime(newTotal)); // Update the deadline
-	   return newTotal;
-	 });
+     // Get current time in seconds
+     const currentTimeInSeconds = getTimeInSeconds(timer);
+     // Subtract 5 minutes (300 seconds), but don't go below 0
+     const newTimeInSeconds = Math.max(0, currentTimeInSeconds - 300);
+     // Update the timer display
+     setTimer(formatTimeFromSeconds(newTimeInSeconds));
+     
+     // Update deadline for the timer
+     const newDeadline = new Date();
+     newDeadline.setSeconds(newDeadline.getSeconds() + newTimeInSeconds);
+     clearTimer(newDeadline);
    };
  
    const handlePauseClick = () => {

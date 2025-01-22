@@ -13,28 +13,45 @@
   
   
   .todo-div {
-    border: 2px solid red;
-    position:relative;
-    height:100vh;
-    /* width: 70px;
-    height: 70px; */
-    padding: 5px;
-    display:flex;
+    position: relative;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     margin-top: 15px;
     transition: transform 0.2s;
     cursor: pointer;
   }
 
-  .todo-text{
-    width: 27%;
-    height:55%;
-    position:absolute;
-    left:35%;
-    top:30%;
-    border: 2px solid green;
+  .todo-text {
+    width: 60%;
+    height: 63%;
+    position: absolute;
+    left: 16%;
+    top: 25%;
+    outline: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    overflow: auto;
+    border: none; /* Remove any borders */
+    background: transparent;
   }
 
-  .todo-img{
-    height:80vh;
+  .todo-img {
+    height: 80vh;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Scrollbar styling */
+  .todo-text::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .todo-text::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .todo-text::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
   }

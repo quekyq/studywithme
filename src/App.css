@@ -187,31 +187,35 @@ body{
 }
 
 
-.todo-container{
-  position:relative;
+.todo-container {
+  position: relative;
+  border: none; /* Remove any borders */
 }
 
-.todo-text{
-  font-size:3vh;
+.todo-text {
+  font-size: 3vh;
   font-weight: bold;
-  position:absolute;
-  top:14%;
+  position: absolute;
+  top: 14%;
   left: 15%;
+  border: none; /* Remove any borders */
 }
 
 .todo-list {
   position: absolute;
-  top: 25%; /* Adjust the position based on your design */
-  left: 16%; /* Adjust the position based on your design */
-  width: 60%; /* Adjust the width based on your design */
-  height: 63%; /* Adjust the height based on your design */
+  top: 25%;
+  left: 16%;
+  width: 60%;
+  height: 63%;
   padding: 10px;
   overflow: hidden;
   rotate: 2deg;
   font-size: 1.5rem;
   line-height: 1;
   outline: none;
-  overflow: scroll;
+  overflow: auto;
+  border: none; /* Remove any borders */
+  background: transparent;
 }
 
 .instruction-container{
@@ -253,35 +257,35 @@ body{
   z-index: 999; /* Set a high z-index to make it appear above other elements */
  
 }
-.to-do-popup{
-  /* opacity: 0.8; */
+.to-do-popup {
   position: fixed;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  z-index: 999; /* Set a high z-index to make it appear above other elements */
+  z-index: 999;
   height: 75%;
   min-height: 600px;
-  width:500px;
-  filter:drop-shadow(0px 80px 200px);
+  width: 500px;
+  filter: drop-shadow(0px 80px 200px);
+  border: none; /* Remove any borders */
 }
 
 
-.to-do-text-box{
-  /* opacity: 0.8; */
+.to-do-text-box {
   position: absolute;
   border-radius: 30px;
   top: 55%;
-  left: 54%; 
+  left: 54%;
   transform: translate(-50%, -50%) rotate(-2deg);
-  z-index: 999; /* Set a high z-index to make it appear above other elements */
+  z-index: 999;
   height: 90%;
   width: 110%;
-  overflow:scroll;
+  overflow: auto;
+  border: none; /* Remove any borders */
 }
 
 

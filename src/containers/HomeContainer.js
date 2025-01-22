@@ -16,23 +16,23 @@ const HomeContainer = () => {
   const [isBreak, setIsBreak] = useState(false);
   const avatars = [homeCat, homeFrog, homeDuck];
   const [currentAvatarIndex, setCurrentAvatarIndex] = useState(0);
-  const [initialTimerValue, setInitialTimerValue] = useState(900*60); //passes in seconds
+  const [initialTimerValue, setInitialTimerValue] = useState(40*60); // 40 minutes in seconds
 
   const convertSecondsToMinutes = (seconds) => {
     return seconds / 60;
   };
   
-  const handleMinusClick = () => { // handles in mins, which is why seconds need to be converted
-    // Ensure timer value does not go below 0
-    if (convertSecondsToMinutes(initialTimerValue) > 0) {
+  const handleMinusClick = () => {
+    // Don't allow timer to go below 5 minutes
+    if (convertSecondsToMinutes(initialTimerValue) > 5) {
       setInitialTimerValue(prevValue => prevValue - 5*60);
     }
   };
 
-  const handlePlusClick = () => { // handles in mins, which is why seconds need to be converted
-    // Increment the timer value
+  const handlePlusClick = () => {
+    // Don't allow timer to go above 995 minutes
     if (convertSecondsToMinutes(initialTimerValue) < 995) {
-        setInitialTimerValue(prevValue => prevValue + 5*60);
+      setInitialTimerValue(prevValue => prevValue + 5*60);
     }
   };
 
@@ -73,7 +73,9 @@ const HomeContainer = () => {
             <img onClick={handlePlusClick} src={bigplus} className="plus-btn" />
         </div>
         <span className="min-label">min</span>
-        <span className= 'timer-value' id="timer-value">{convertSecondsToMinutes(initialTimerValue)}</span>
+        <span className="timer-value" id="timer-value">
+          {convertSecondsToMinutes(initialTimerValue)}
+        </span>
     </div>
           </div>
           <div className='avatar-container'>
